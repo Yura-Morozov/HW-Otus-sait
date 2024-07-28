@@ -11,9 +11,9 @@
   </title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
-  <link rel="icon" type="image/x-icon" href="{% static 'HW-Otus-sait/images/favicon.ico' %}" />
+  <link rel="icon" type="image/x-icon" href="{% static 'HW-Otus-sait/static/images/favicon.ico' %}" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="{% static 'HW-Otus-sait/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'HW-Otus-sait/static/css/bootstrap.css' %}">
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -27,13 +27,13 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link {% if_current_page '/HW-Otus-sait/index.html' 'active' '' %}" href="{% url '/HW-Otus-sait/index.html' %}">Home</a>
+            <a class="nav-link {% if_current_page '/HW-Otus-sait/index.html' 'active' '' %}" href="{% url '/HW-Otus-sait/index' %}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if_current_page '/HW-Otus-sait/about.html' 'active' '' %}" href="{% url '/HW-Otus-sait/about.html' %}">About</a>
+            <a class="nav-link {% if_current_page '/HW-Otus-sait/about.html' 'active' '' %}" href="{% url '/HW-Otus-sait/about' %}">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if_current_page '/HW-Otus-sait/contact.html' 'active' '' %}" href="{% url '/HW-Otus-sait/contact.html' %}">Contact</a>
+            <a class="nav-link {% if_current_page '/HW-Otus-sait/contact.html' 'active' '' %}" href="{% url '/HW-Otus-sait/contact' %}">Contact</a>
           </li>
         </ul>
       </div>
@@ -46,8 +46,8 @@
   <footer
     class="footer mt-auto py-3 bg-dark d-flex flex-wrap justify-content-between align-items-center py-3 px-3 border-top">
     <div class="col-md-4 d-flex align-items-center">
-      <a href="{% url '/index.html' %}" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-        <img src="{% static 'HW-Otus-sait/images/logo.png' %}" class="bi" width="30" height="24">
+      <a href="{% url '/HW-Otus-sait/index.html' %}" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <img src="{% static 'HW-Otus-sait/static/images/logo.png' %}" class="bi" width="30" height="24">
       </a>
       <span class="mb-3 mb-md-0 text-muted">Copyleft &#127279; LavaCactus 2023</span>
     </div>
