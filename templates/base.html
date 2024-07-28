@@ -27,13 +27,13 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link {% if_current_page '/HW-Otus-sait/index.html' 'active' '' %}" href="{% url '/HW-Otus-sait/index.html' %}">Home</a>
+            <a class="nav-link {% if_current_page '/HW-Otus-sait/index.html' 'active' '' %}" href="{% url '/HW-Otus-sait/index' %}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if_current_page '/HW-Otus-sait/about.html' 'active' '' %}" href="{% url '/HW-Otus-sait/about.html' %}">About</a>
+            <a class="nav-link {% if_current_page '/HW-Otus-sait/about.html' 'active' '' %}" href="{% url '/HW-Otus-sait/about' %}">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if_current_page '/HW-Otus-sait/contact.html' 'active' '' %}" href="{% url '/HW-Otus-sait/contact.html' %}">Contact</a>
+            <a class="nav-link {% if_current_page '/HW-Otus-sait/contact.html' 'active' '' %}" href="{% url '/HW-Otus-sait/contact' %}">Contact</a>
           </li>
         </ul>
       </div>
@@ -61,8 +61,8 @@
 
   </footer>
 
-  <script src="{% static '../HW-Otus-sait/static/js/vendor/jquery-3.7.0.js' %}"></script>
-  <script src="{% static '../HW-Otus-sait/static/js/vendor/bootstrap.js' %}"></script>
+  <script src="{% static '../static/js/vendor/jquery-3.7.0.js' %}"></script>
+  <script src="{% static '../static/js/vendor/bootstrap.js' %}"></script>
 </body>
 
 {% block scripts %}
